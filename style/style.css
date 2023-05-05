@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Zen+Antique&family=Zen+Antique+Soft&display=swap');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Zen Antique', serif;
+font-family: 'Zen Antique Soft', serif; */
+
+h1{
+    color: black;
+    font-family: 'Zen Antique', serif;
+    font-size: 3em;
+    /*background-color: blue;*/
+}
+h2{
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 1.3em;
+}
+h3{
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 1em;
+    margin: 15px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+html, body, .grid-container {
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.2fr 2fr 0.2fr;
+}
+
+header {
+    background-color:#EFE3D3;
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid lightgray;
+    margin: 0;
+    padding: 0;
+}
+
+.flexcontainer{
+    /*background-color: blue;*/
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 130px;
+    width: 130px;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-size: cover;
+    /*background-color: red;*/
+}
+
+.navflexbox {
+    width: 100%;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #ECEDCD;
+    border-bottom: solid lightgray;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+/*
+.navbar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #B7CADB;
+    width: 20%;
+    min-width: 80px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9em;
+}
+*/
+.navbar li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9em;
+    width: 20%;
+  }
+  
+.navbar li a {
+    display: block;
+    padding: 0.75rem;
+    background: #B7CADB;
+    width: 100%;
+    min-width: 60px;
+    border-radius: 5px;
+}
+.navbar li a:hover {
+    background-color: #A5A6F6;
+    transition: background-color 550ms ease;
+    cursor: pointer;  
+}
+.navbar li a:focus {
+    background-color: #A5A6F6;
+    transition: background-color 550ms ease;
+    cursor: pointer;  
+}
+.header2 {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+}
+.homepic{
+    background-color: red;
+/*    height: 62%;
+    width: 95%;*/
+    grid-row: 1/2;
+    grid-column: 1/2;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 10px;
+    background-image: url(../images/bereal.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.shortdesc{
+    width: 95%;
+    margin-left: 2.5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+}
+.desccontent{
+    max-width: 95%;
+}
+footer {
+    grid-column: 1;
+    grid-row: 4;
+    background: #B7CADB;
+    text-align: center;
+    border-top: solid lightgray;
+}
+.footwrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.svg-icon{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.homewrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 55%;
+    min-height: 250px;
+    width: 95%;
+    margin-left: 2.5%;
+}
+.additionalpics{
+    display: none;
+}
+.descadd{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+main{
+    overflow-y: auto;
+}
+/*ABOUT PAGE*/
+.aboutwrap{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .1fr .1fr 1fr 1fr .1fr 1fr 1fr 1fr;
+    height: 400vh;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 0;
+    align-items: flex-start;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+.mountaingrouppic{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: red;
+    border-radius: 10px;
+    background-image: url(../images/Mountain_group.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.aboutdesc{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 95%;
+    margin-left: 2.5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.article{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #B7CADB;
+    border-radius: 10px;
+    text-align: center;
+}
+.article a{
+        display: block;
+        background: #B7CADB;
+        width: 100%;
+        border-radius: 5px;
+        height: 100%;
+        padding: .1px;
+    }
+.article a:hover{
+    background-color: #A5A6F6;
+    transition: background-color 550ms ease;
+    cursor: pointer;
+}
+.article a:focus{
+    background-color: #A5A6F6;
+    transition: background-color 550ms ease;
+    cursor: pointer;
+}
+.moodboardspic{
+    grid-row: 4/5;
+    grid-column: 1/2;
+    background-color: red;
+    border-radius: 10px;
+    background-image: url(../images/moodboards.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.roadpic{
+    grid-row: 5/6;
+    grid-column: 1/2;
+    background-color: red;
+    border-radius: 10px;
+    background-image: url(../images/roadtrip_photo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.meetingdesc{
+    grid-row: 6/7;
+    grid-column: 1/2;
+    width: 95%;
+    margin-left: 2.5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.mountainhousepic{
+    grid-row: 8/9;
+    grid-column: 1/2;
+    background-color: red;
+    border-radius: 10px;
+    background-image: url(../images/mountain_house.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.viewpic{
+    grid-row: 7/8;
+    grid-column: 1/2;
+    background-color: red;
+    border-radius: 10px;
+    background-image: url(../images/mountains_view.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.duopic{
+    grid-row: 9/10;
+    grid-column: 1/2;
+    background-color: red;
+    border-radius: 10px;
+    background-image: url(../images/Moutain_duo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;   
+}
+
+
+
+@media screen and (min-width: 481px){
+    .homewrap{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 60%;
+    }
+    .additionalpics{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        margin-right: 20px;
+    }
+    .homepic{
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+    .mountainpic{
+        background-image: url(../images/mountains_candid.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    
+    }
+    .fielddaypic{
+        background-image: url(../images/field_day.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .desccontent{
+        font-size: 1.1em;
+        max-width: 80%;
+    }
+    .navbar li{
+        font-size: 1.1em;
+    }
+    p{
+        font-size: 1.1em;
+    }
+    h2{
+        font-size: 1.6em;
+    }
+    h3{
+        font-size: 1.1em;
+    }
+    .navbar li a {
+        display: block;
+        padding: 0.75rem;
+        background: #B7CADB;
+        width: 100%;
+        min-width: 80px;
+        border-radius: 5px;
+      }
+}
+@media screen and (min-width: 1400px){
+.homewrap{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 65%;
+}
+.additionalpics{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    margin-right: 20px;
+}
+.homepic{
+    grid-row: 1/3;
+    grid-column: 1/2;
+}
+.mountainpic{
+    background-image: url(../images/mountains_candid.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+.fielddaypic{
+    background-image: url(../images/field_day.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.shortdesc{
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 0;
+}
+.desccontent{
+    font-size: 1.4em;
+    max-width: 80%;
+}
+p{
+    font-size: 1.4em;
+}
+.navbar li{
+    font-size: 1.4em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+.descadd{
+    display: flex;
+}
+/*About page stuff for breakpoint*/
+.aboutwrap{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .1fr .6fr 1fr .1fr .8fr .8fr;
+    height: 200vh;
+}
+.mountaingrouppic{
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-size: cover;
+    background-position: center;
+}
+.aboutdesc{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 100%;
+    text-align: left;
+}
+.meetingdesc{
+    width: 100%;
+}
+.article{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: #B7CADB;
+    border-radius: 10px;
+    text-align: center;
+}
+.moodboardspic{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+.roadpic{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.meetingdesc{
+    grid-row: 4/5;
+    grid-column: 1/3;
+}
+.mountainhousepic{
+    grid-row: 6/7;
+    grid-column: 2/3;
+}
+.viewpic{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    background-color: red;
+    border-radius: 10px;
+    background-image: url(../images/mountains_view.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.duopic{
+    grid-row: 5/7;
+    grid-column: 1/2;   
+}
+}
+
+
+
+
+
+
+/*Annas Bulletin Board Stuff*/
+
+
+.calendar {
+    width: 80%;
+    margin: auto;
+    border: solid black;
+    margin-top: 30px;
+}
+
+.bulletin-text {
+    text-align:center;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.slideshow-wrap {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.slideshow {
+    min-height: 400px;
+    width: 35%;
+    min-width: 400px;
+    border: solid black;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+.bulletin-text{
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.p-footer {
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
